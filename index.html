@@ -5,6 +5,24 @@
 	<meta name="description" content="Kids Store">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css\style.css">
+
+	 <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service.js')
+    .then(function(registration) {
+      registration.addEventListener('updatefound', function() {
+        var installingWorker = registration.installing;
+        console.log('Sw working:',
+          installingWorker);
+      });
+    })
+    .catch(function(eror) {
+      console.log('serviceWorker failed:', eror);
+    });
+} else {
+  console.log('serviceWorker is supported.');
+}
+  </script>
 </head>
 <body>
 	<header class="head">
