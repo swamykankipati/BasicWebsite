@@ -1,0 +1,124 @@
+.head{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	max-width: 100%;
+	padding: 2%;
+	margin: 2%;
+
+}
+#logo{
+width:50%;
+
+}
+.img-log{
+	border-radius: 50%;
+	border:blue solid ;
+}
+.information{
+	width: 50%;
+	text-align:right;
+}
+.main{
+	display: flex;
+	flex-wrap:wrap;
+	max-width: 100%;
+	justify-content:space-around;
+}
+.child{
+	border: solid blue;
+	text-align: center;
+	box-shadow: 5px 5px 5px 5px;
+	padding: 1%;
+	margin: 2%;
+}
+.log{
+	border-radius: 50%;
+}
+.foot{
+	box-shadow: 2px 2px 2px 2px;
+	background: #fff;
+	padding: 2%;
+	margin: 2%;
+	max-width: 100%;
+	text-align: center;
+	color: #2D0242;
+	font-size: 20px;
+}
+#pfont{
+	font-size: 18px;
+}
+.headtitile{
+	color:#3396FF;
+	text-align: center;
+}
+#name{
+color:#4C0251;
+}
+.role{
+	color:#2D0242;
+}
+.img-child{
+	border-radius:30%;
+	border: 2px solid #2D0241;
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+	.main{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 100%;
+
+	}
+	.head{
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+		text-align: center;
+
+	}
+	.headtitile{
+		text-overflow: wrap;
+		text-align: center;
+	}
+	.foot{
+	box-shadow: 2px 2px 2px 2px;
+	background: #fff;
+	padding: 2%;
+	margin: 2%;
+	max-width:100%;
+}
+.parafont{
+	font-size: 20px;
+}
+.child{
+	padding: 2%;
+	margin: 2%;
+	border-radius: 20%;
+}
+.btn{
+	box-shadow: 3px 3px 2px 2px;
+}
+.tname{
+color: #897777;
+}
+}
+@media screen and (min-width:481px) and (max-width:768px){
+	.btn{
+		box-shadow: 3px 3px 3px 3px;
+	}
+	.tname{
+	color: #BC0E0E;
+	}
+	.parafont{
+		font-size: 19px;
+	}
+	.child{
+		padding:2%;
+		margin:3%;
+		border-radius:20%;
+	}
+
+}
